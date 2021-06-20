@@ -1,0 +1,107 @@
+body
+{
+    background-color: white;
+    margin: 0px;
+    margin-top: -100px;
+}
+#homepage-cover
+{
+    overflow: hidden;
+    display: block;
+    /* background-image: url('https://images.unsplash.com/photo-1524262134826-05a36ba28ec4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80');
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    height: 700px;
+    width: 100%;
+}
+video
+{
+    position: absolute;
+    width: 100vw;
+    height: 700px;
+    object-fit: cover;
+    z-index: -10;
+}
+.display-center-y
+{
+    position: relative;
+    top: 25%;
+}
+.display-center-x
+{
+    margin: 0px auto;
+}
+.display-block
+{
+    display: block;
+}
+
+.position-relative
+{
+    position: relative;
+}
+
+.border-rounded
+{
+    border-radius: 50%;
+}
+
+.lbl-covertitle
+{
+    color: white;
+    font-size: 80px;
+    font-family: Roboto;
+}
+.lbl-coversubtitle
+{
+    color: white;
+    font-family: Roboto;
+    font-size: 28px;
+}
+.lbl-title
+{
+    color: white;
+    font-family: Roboto;
+    font-size: 24px;
+}
+.lbl-p
+{
+    color: white;
+    font-family: Roboto;
+    font-size: 18px;
+}
+.lbl-darker
+{
+    color: black;
+}
+.lbl-thin
+{
+    font-weight: lighter;
+}
+.lbl-center
+{
+    text-align: center;
+}
+.homepage-container
+{
+    width: 100%;
+}
+.homepage-centeredcontainer
+{
+    padding: 15px;
+    width: 90%;
+}
+.bgcolor-red
+{
+    background-color: red;
+}
+.bgcolor-lighter
+{
+
+    background-color:white
+}
+.bgcolor-darker
+{
+    background-color: rgb(41, 41, 41);
+}
