@@ -3,22 +3,19 @@ body
     background-color: white;
     margin: 0px;
     margin-top: -100px;
+    width: fit-content;
 }
 #homepage-cover
 {
     overflow: hidden;
     display: block;
-    /* background-image: url('https://images.unsplash.com/photo-1524262134826-05a36ba28ec4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80');
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
     height: 700px;
     width: 100%;
 }
 video
 {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 700px;
     object-fit: cover;
     z-index: -10;
@@ -83,6 +80,10 @@ video
 {
     text-align: center;
 }
+.homepage-container-marginLeft10
+{
+    margin-left: 20px;
+}
 .homepage-container
 {
     width: 100%;
@@ -92,16 +93,80 @@ video
     padding: 15px;
     width: 90%;
 }
+.timeline
+{
+    display: block;
+    position: relative;
+    margin: 50px auto;
+    padding: 40px 0;
+    height: fit-content;
+}
+.timeline:before
+{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: black;
+}
+.timeline ul
+{
+    list-style: none;
+}
+.timeline li
+{
+    padding: 10px;
+}
+.timeline ul li:nth-child(odd)
+{
+    position: relative;
+    margin-left: -55px;
+    width:50%;
+    text-align: right;
+}
+.timeline ul li:nth-child(even)
+{
+    position: relative;
+    margin-left: 49.7%;
+    width: 50%;
+    text-align: left;
+}
+.timeline ul li:nth-child(odd):before
+{
+    content: '';
+    width: 15px;
+    height: 15px;
+    right: -23px;
+    background-color: black;
+    box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, .2);
+    border-radius: 50%;
+    position: absolute;
+}
+.timeline ul li:nth-child(even):before
+{
+    content: '';
+    width: 15px;
+    height: 15px;
+    left: -22px;
+    background-color: black;
+    box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, .2);
+    border-radius: 50%;
+    position: absolute;
+}
 .bgcolor-red
 {
     background-color: red;
 }
+.bgcolor-green
+{
+    background-color: green;
+}
 .bgcolor-lighter
 {
-
     background-color:white
 }
-.bgcolor-darker
+.bgcolor-lighter2
 {
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(230, 230, 230);
 }
