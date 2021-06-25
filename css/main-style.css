@@ -208,15 +208,36 @@ video
 {
     background-color: green;
 }
+.bgcolor-lightRed
+{
+    background-color: #FFE5E5;   
+}
+.bgcolor-lightBlue
+{
+    background-color: #B5E2FF;
+}
 .bgcolor-lighter
 {
     background-color:white
+}
+.bgcolor-gradBlue
+{
+    background: rgb(2,0,36);
+    background: linear-gradient(22deg, rgba(2,0,36,1) 0%, rgba(9,100,121,1) 0%, rgba(0,212,255,1) 100%);
+}
+.bgcolor-gragOrangeRed
+{
+    background: rgb(131,58,180);
+background: linear-gradient(332deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
 }
 .bgcolor-lighter2
 {
     background-color: rgb(230, 230, 230);
 }
-
+.bgcolor-linkedin
+{
+    background-color: #2867B2;
+}
 @media (min-width: 1200px) {
     
     .min-width-display
