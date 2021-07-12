@@ -170,7 +170,7 @@
                 </div>
             </div>
         </div>
-        <h1 class="lbl-title lbl-thin lbl-darker lbl-center">Professional experiences</h1>
+        <h1 class="lbl-title lbl-thin lbl-darker lbl-center">Games I worked on</h1>
         <div id="game-content" class="homepage-container bgcolor-lighter2"
             style="box-shadow: inset 0 0 1em rgba(0, 0, 0, .1);">
             <div class="homepage-centeredcontainer display-center-x display-block" style="height: 100%;">
@@ -280,21 +280,30 @@
         <div class="homepage-container bgcolor-lighter">
             <div class="homepage-centeredcontainer display-center-x display-block" style="height: 100%;">
                 <div class="display-center-x" style="width: fit-content; margin-bottom: 20px;">
-                    <button class="nav-button lbl-center bgcolor-linkedin">
+                    <button class="nav-button lbl-center bgcolor-linkedin"
+                        onclick="window.location.href='https://www.linkedin.com/in/pedro-pereira-7694b7166/'">
                         <p class="display-center-x">LinkedIn</p>
                         <img src="media/svg/linkedin_social_icon.svg">
                     </button>
                 </div>
-                <div class="display-center-x" style="display: flexbox; width: fit-content;">
-                    <iframe class="display-center-x" style="overflow: hidden;"
-                        src="https://www.linkedin.com/embed/feed/update/urn:li:share:6783384278353907713" width="420"
-                        height="750" frameborder="0" allowfullscreen="" title="Publicação incorporada"></iframe>
-                    <iframe style="overflow: hidden;"
-                        src="https://www.linkedin.com/embed/feed/update/urn:li:share:6683481234779320320" width="420"
-                        height="750" frameborder="0" allowfullscreen="" title="Publicação incorporada"></iframe>
-                    <iframe style="overflow: hidden;"
-                        src="https://www.linkedin.com/embed/feed/update/urn:li:share:6721163339323465728" width="420"
-                        height="750" frameborder="0" allowfullscreen="" title="Publicação incorporada"></iframe>
+                <div class="display-center-x">
+                    <ul class="display-center-x"
+                        style="padding: 0px; min-width: 70%; width: fit-content; display: flex;">
+                        <li class="li-general" style="width: 50%; margin-right: 10px;">
+                            <iframe style="overflow: hidden; border: 1px solid 
+                            #dfdfdf; border-radius: 25px;"
+                                src="https://www.linkedin.com/embed/feed/update/urn:li:share:6783384278353907713"
+                                width="100%" height="760" frameborder="0" allowfullscreen=""
+                                title="Publicação incorporada"></iframe>
+                        </li>
+                        <li class="li-general" style="width: 50%;">
+                            <iframe style="overflow: hidden; border: 1px solid 
+                            #dfdfdf; border-radius: 25px;"
+                                src="https://www.linkedin.com/embed/feed/update/urn:li:share:6683481234779320320"
+                                width="100%" height="760" frameborder="0" allowfullscreen=""
+                                title="Publicação incorporada"></iframe>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -306,6 +315,35 @@
         <br>
         <br>
         <br>
+        <div id="game-content" class="homepage-container bgcolor-lighter2"
+            style="box-shadow: inset 0 0 1em rgba(0, 0, 0, .1);">
+            <div class="homepage-centeredcontainer display-center-x display-block" style="height: 100%;">
+                <h1 class="lbl-title lbl-thin lbl-darker lbl-center">See my resume file here</h1>
+                <div class="display-center-x" style="width: fit-content; margin-bottom: 20px;">
+
+                    <button class="nav-button lbl-center" style="width: 200px; background-color: black;"
+                        onclick="window.location.href='https://docs.google.com/document/d/1LgeclJSvUg31HWkJW08e6CUHAAuWaHsXQP8SzuiMH_8/edit?usp=sharing'">
+                        <p class="display-center-x" style="width: 100%;">Go to resume</p>
+                        <!-- <img src="media/svg/linkedin_social_icon.svg"> -->
+                    </button>
+
+                </div>
+                <h1 class="lbl-title lbl-thin lbl-darker lbl-center">Contact me !</h1>
+                <div class="display-center-x" style="width: fit-content; margin-bottom: 20px;">
+                    <form class="contactme-container" action="https://formsubmit.co/pedropereralourenco@gmail.com"
+                        method="POST">
+                        <br>
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <br>
+                        <input type="email" name="email" placeholder="Email Address">
+                        <br>
+                        <textarea name="message" placeholder="Message"></textarea>
+                        <br>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
     <br>
 </body>
