@@ -15,7 +15,13 @@
     <script>
         $(document).ready(()=>
         {
-            $("#back-to-unity-holder").append('<a id="forceclick" href="unitydl://debugtest?'+ window.location.href.split('?')[1] + '"><h2 class="lbl-btn-black lbl-center lbl-title lbl-thin display-center-x" style="width: 200px;">Back to game</h2></a>').click();
+            $("#back-to-unity-holder").append('<a id="forceclick" href="unitydl://debugtest?'+ window.location.href.split('?')[1] + '"><h2 class="lbl-btn-black lbl-center lbl-title lbl-thin display-center-x" style="width: 200px;">Back to game</h2></a>');
+            $("#forceclick").on("click",()=>
+            {
+                var params = window.location.href.split('?')[1];
+                window.location.href='unitydl://debugtest?'+ params
+            });
+            $("#forceclick").click();
         });
     </script>
 
