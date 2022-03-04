@@ -21,6 +21,10 @@ img:hover
     height: 700px;
     width: 100%;
 }
+a, a:visited
+{
+    text-decoration: none;
+}
 video
 {
     position: absolute;
@@ -98,6 +102,19 @@ video
 {
     text-align: justify;
 }
+.lbl-btn-black
+{
+    background-color: black;
+    padding: 15px;
+    border-radius: 50px;
+    transition: all .2s;
+}
+.lbl-btn-black:hover
+{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
 .nav-button
 {
     color: white;
@@ -266,6 +283,7 @@ background: linear-gradient(332deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%,
 .inline-list span:hover
 {
     font-size: 19px;
+    
     cursor: pointer;
 }
 
