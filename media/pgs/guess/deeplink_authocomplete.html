@@ -7,13 +7,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Benne&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body style="margin-top: 0px; width: 100%;">
+
+    <script>
+        $(document).ready(()=>
+        {
+            $("#back-to-unity-holder").append('<a href="unitydl://debugtest?'+ window.location.href.split('?')[1] + '"><h2 class="lbl-btn-black lbl-center lbl-title lbl-thin display-center-x" style="width: 200px;">Back to game</h2></a>');
+            window.location.href= '"unitydl://debugtest?'+ window.location.href.split('?')[1] + '"';
+        });
+    </script>
+
     <section id="homepage-main" style="width: 100%;">
-        <div cass="homepage-container">
+        <div id="back-to-unity-holder" cass="homepage-container">
             <h2 class="lbl-title lbl-center lbl-darker lbl-thin">Authorization completed !</h2>
-           <a href="unitydl://debugtest"><h2 class="lbl-btn-black lbl-center lbl-title lbl-thin display-center-x" style="width: 200px;">Back to game</h2></a>
         </div>
     </section>
 </body>
