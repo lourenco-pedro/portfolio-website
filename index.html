@@ -10,9 +10,12 @@
 </head>
 
 <body>
+    
+    
+    
     <section id="homepage-cover" style="overflow: hidden;">
-        <video autoplay loop muted>
-            <source src="media/mp4/Almighty_ Kill Your Gods - Official Announcement Trailer.mp4" type="video/mp4">
+        <video id="video-banner" autoplay loop muted>
+            <source src="media/mp4/Gunstars.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div style="z-index: 11; position: relative; height: 120%; background-color: rgba(0, 0, 0,.7);">
@@ -313,15 +316,11 @@
                             it and upload them in realtime to the players, those bundles have integration with our backend and Unity IAP SDK.
                         </p>
                         <div class="display-center-x" style="display: table; width: 465px;">
-                            <button class="nav-button lbl-center" onclick="window.location.href='https://store.steampowered.com/app/1114520/Hero_Among_Us/'">
-                                <p class="display-center-x">Steam</p>
-                                <img src="media/svg/steam_icon.svg">
-                            </button>
-                            <button class="nav-button lbl-center" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.firehorse.hau&hl=en&gl=US'">
+                            <button class="nav-button lbl-center" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.Monomyto.GunStars&hl=pt_BR&gl=US'">
                                 <p class="display-center-x">Android</p>
                                 <img src="media/svg/play_playstore_icon.svg">
                             </button>
-                            <button class="nav-button lbl-center" onclick="window.location.href='https://apps.apple.com/us/app/hero-among-us/id1485640375'">
+                            <button class="nav-button lbl-center" onclick="window.location.href='https://apps.apple.com/br/app/gunstars-battle-royale/id1546759631'">
                                 <p class="display-center-x">IOs</p>
                                 <img src="media/svg/appstore_apple_app_icon.svg">
                             </button>
@@ -477,6 +476,25 @@
         </div>
     </section>
     <br>
+
+    <script>
+        // window.addEventListener('load', function(e)
+        // {
+        
+            console.log('set video');
+            var possiblevideos = ['media/mp4/Gunstars.mp4', 'media/mp4/hau.mp4', 'media/mp4/almighty.mp4']
+
+            var videobanner = document.getElementById('video-banner')
+            var source = videobanner.getElementsByTagName('source')[0]
+
+            console.log(source)
+
+            source.src = possiblevideos[ Math.floor(Math.random() * possiblevideos.length) ]
+            videobanner.load();
+        // });
+    </script>
+
+
 </body>
 
 </html>
