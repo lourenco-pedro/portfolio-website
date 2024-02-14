@@ -9,11 +9,11 @@ img
 {
     transition: all .2s;
 }
-img:hover
+/* img:hover
 {
     transform: scale(1.1);
     cursor: pointer;
-}
+} */
 #homepage-cover
 {
     overflow: hidden;
@@ -50,6 +50,10 @@ video
 .display-block
 {
     display: block;
+}
+.display-inline
+{
+    display: inline-flex;
 }
 
 .position-relative
@@ -462,4 +466,43 @@ background: linear-gradient(332deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%,
 .width-50vw
 {
     width: 50vw;
+}
+
+.img-container
+{
+    max-width: 100%;
+    height: auto;
+}
+
+.embed-devto
+{
+    border: 1px solid rgb(223, 223, 223);
+    padding: 10px;
+    border-radius: 25px;
+    width: 25%;
+    margin: 0px auto;
+    transition: all .2s;
+}
+
+.embed-devto img
+{
+    width: 100%;
+    height: auto;
+}
+
+.embed-devto h1
+{
+    font-family: 'Roboto';
+    font-size: 28;
+}
+
+.embed-devto p
+{
+    font-size: 24px;
+}
+
+.embed-devto:hover
+{
+    transform: scale(1.05, 1.05);
+    cursor: pointer;
 }
